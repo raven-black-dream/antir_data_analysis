@@ -1,0 +1,19 @@
+---
+title: "An Tir Award Statistics"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(dplyr)
+library(RMariaDB)
+
+rmariadb.settingsfile <- "C:\\Users\\FX504\\Source\\creds\\antirop.cnf"
+rmariadb.db <- "antirop"
+antirdb <- dbConnect(RMariaDB::MariaDB(),default.file=rmariadb.settingsfile,group=rmariadb.db)
+```
+
+
+
+
